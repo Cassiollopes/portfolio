@@ -36,13 +36,13 @@ export default function Hero() {
             Olá 👋 eu sou Cassio
           </p>
         </div>
-        <h1 className="text-9xl leading-[0.80] max-md:text-[4rem] text-center">
+        <h1 className="text-9xl leading-[0.80] max-md:text-[4rem] text-center font-geist-sans font-semibold">
           <span className="text-sky-400 md:text-[110px]">Software</span>
           <br />
           Developer
         </h1>
       </div>
-      <p className="text-center max-w-[600px] font-normal max-md:max-w-[380px] opacity-70 max-md:text-[15px] max-md:font-semibold">
+      <p className="text-center max-w-[600px] max-md:max-w-[380px] opacity-70 max-md:text-[15px]">
         Tenho 19 anos, estou no terceiro semestre da faculdade e procuro uma
         oportunidade de estágio na área de desenvolvimento de software.
       </p>
@@ -53,8 +53,8 @@ export default function Hero() {
             href={link.link}
             target="_blank"
             className={`gap-1 p-2 px-4 border rounded-md text-black/50 dark:text-white/50 dark:hover:text-white hover:text-black/65 transition-all duration-200 ease-in-out flex items-center bg-black/5 dark:bg-white/5 dark:hover:bg-white/10 hover:bg-black/10 justify-center text-base md:w-[125px] ${
-              i === 0 && "max-sm:hidden"
-            } max-md:text-[15px] text-sm max-md:font-semibold`}
+              i === 0 && "hidden"
+            } max-md:text-[15px] text-sm`}
           >
             <div>{link.icon}</div>
             {link.name}

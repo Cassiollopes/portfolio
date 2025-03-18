@@ -52,7 +52,7 @@ export default function Home() {
   return (
     <div className="flex items-center justify-start flex-col min-h-screen overflow-hidden pb-20 scroll-smooth">
       <Hero />
-      <div className="flex flex-col text-2xl font-bold items-center w-full gap-16 max-w-[640px] md:px-5">
+      <div className="flex flex-col text-2xl items-center w-full gap-16 max-w-[640px] md:px-5">
         <div className="flex flex-col gap-10 items-center w-full">
           <div className="flex flex-col gap-5 w-full max-md:px-5">
             <h1>Habilidades</h1>
@@ -60,7 +60,7 @@ export default function Home() {
               {skills.map((skill, i) => (
                 <div
                   key={i}
-                  className="flex gap-2 items-center opacity-50 text-base bg-black/10 dark:bg-white/5 p-1 px-2 rounded-lg font-normal max-md:font-semibold"
+                  className="flex gap-2 items-center opacity-50 text-base bg-black/10 dark:bg-white/5 p-1 px-2 rounded-lg font-light"
                 >
                   {skill.icon}
                   <p>{skill.name}</p>
@@ -83,14 +83,14 @@ export default function Home() {
                   height={46}
                   className="rounded-full object-cover"
                 />
-                <div className="flex flex-col gap-0.5 max-md:font-semibold font-normal text-sm">
+                <div className="flex flex-col gap-0.5 text-sm">
                   <p>Una Divinópolis</p>
                   <p className="opacity-60 truncate">
                     Cursando Ciência da Computação
                   </p>
                 </div>
               </div>
-              <p className="opacity-50 text-sm max-md:font-normal font-light whitespace-nowrap">
+              <p className="opacity-50 text-sm font-light whitespace-nowrap">
                 2024 - Atual
               </p>
             </Link>

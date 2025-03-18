@@ -1,4 +1,4 @@
-import { Geist } from "next/font/google";
+import { Geist, Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/nav";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -7,6 +7,11 @@ import { Metadata } from "next";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin-ext"],
 });
 
 export const metadata: Metadata = {
@@ -21,9 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-      <body
-        className={`${geistSans.className} antialiased scroll-smooth`}
-      >
+      <body className={`${inter.className} ${geistSans.variable} antialiased scroll-smooth`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

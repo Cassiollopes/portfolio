@@ -39,7 +39,7 @@ export default function ProjectCard({
 }) {
   return (
     <div
-      className="w-full h-full relative overflow-hidden border rounded-lg flex items-start justify-start group flex-col hover:border-black/20 dark:hover:border-white/20 transition-all duration-200 ease-in max-md:min-w-[88vw] max-w-[350px]"
+      className="w-full h-full relative overflow-hidden border rounded-lg flex items-start justify-start group flex-col hover:border-black/20 dark:hover:border-white/20 transition-all duration-200 ease-in max-md:min-w-[88vw] max-w-[350px] bg-gradient-to-b from-transparent dark:to-black/10 to-white from-60%"
       style={{ scrollSnapAlign: "center" }}
     >
       <Link
@@ -71,14 +71,14 @@ export default function ProjectCard({
           <div className="text-3xl">{icon}</div>
           <h1 className="text-xl">{title}</h1>
         </div>
-        <p className="text-sm max-md:text-base font-normal max-md:font-semibold opacity-70">
+        <p className="text-sm max-md:text-base opacity-70">
           {description}
         </p>
         <div className="flex flex-wrap gap-2 pb-1 gap-x-1.5">
           {technologies.map((tech, i) => (
             <div
               key={i}
-              className="lowercase p-0.5 px-2 dark:bg-white/5 bg-black/5 rounded-md text-xs flex gap-1 items-center max-md:font-normal font-light max-md:text-sm"
+              className="lowercase p-0.5 px-2 dark:bg-white/5 bg-black/5 rounded-md text-xs flex gap-1 items-center font-light max-md:text-sm"
             >
               {tech.icon}
               {tech.label}
