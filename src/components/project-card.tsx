@@ -45,7 +45,7 @@ export default function ProjectCard({
       <Link
         href={link}
         target="_blank"
-        className="flex h-[180px] relative overflow-hidden w-full justify-center shadow-inner dark:opacity-80 opacity-95"
+        className="flex h-[180px] relative overflow-hidden w-full justify-center shadow-inner dark:opacity-80"
       >
         <Image
           src={images[0]}

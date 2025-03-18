@@ -100,7 +100,7 @@ export default function Home() {
         <div className="flex flex-col gap-10 items-center w-full">
           <div className="w-fit md:text-3xl flex-col uppercase">
             <h1>Meus Projetos</h1>
-            <div className="rounded w-full h-[1px] bg-gradient-to-r from-sky-100/0 via-sky-300 to-sky-100/0" />
+            <div className="rounded w-full h-[1.5px] bg-gradient-to-r from-sky-100/0 via-sky-300 to-sky-100/0" />
           </div>
           <div
             className="flex gap-4 max-md:overflow-x-scroll max-md:px-5 w-full scroll-smooth"
