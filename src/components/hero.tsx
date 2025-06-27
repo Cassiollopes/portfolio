@@ -26,7 +26,7 @@ export default function Hero() {
         <h1 className="opacity-85 text-5xl max-md:text-3xl w-fit">
           Olá, <br /> eu sou Cassio 👋
         </h1>
-        <div className="max-w-[90px] w-full h-full max-h-[90px] ring-[1.5px] ring-sky-300 rounded-full overflow-hidden">
+        <div className="max-w-[90px] w-full h-full max-h-[90px] ring-[1.5px] rounded-full overflow-hidden">
           <Image
             src="https://github.com/cassiollopes.png"
             alt="Cassio"
