@@ -103,9 +103,7 @@ export default function Home() {
             <h1>Meus Projetos</h1>
             <div className="rounded w-full h-[1.5px] bg-gradient-to-r from-sky-100/0 via-sky-300 to-sky-100/0" />
           </div>
-          <div
-            className="grid md:grid-cols-2 gap-4 max-md:overflow-x-scroll max-md:px-5 w-full scroll-smooth"
-          >
+          <div className="grid md:grid-cols-2 gap-4 max-md:overflow-x-scroll max-md:px-5 w-full scroll-smooth">
             <ProjectCard
               link="https://e-commerce-rho-eosin.vercel.app/"
               sourceLink="https://github.com/cassiollopes/e-commerce"
@@ -127,8 +125,8 @@ export default function Home() {
             <ProjectCard
               link="https://y-one-murex.vercel.app/"
               sourceLink="https://github.com/Cassiollopes/y"
-              title="Twitter Clone"
-              description="Clone do Twitter. Permite a criação de tweets, curtidas e respostas. Possui um feed de tweets e respostas."
+              title="Y-Social"
+              description="Clone do Twitter com sistema de tweets, curtidas, respostas e feed dinâmico."
               images={["/mobile-y.png", "/desktop-y.png"]}
               icon={
                 <p className="font-serif h-[30px] leading-0 flex items-center">

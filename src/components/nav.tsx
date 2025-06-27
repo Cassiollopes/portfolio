@@ -10,28 +10,30 @@ export default function Nav() {
   const isDarkMode = resolvedTheme === "dark";
 
   return (
-    <nav className="w-full p-4 sticky top-0 z-50 border-b backdrop-blur-xl ">
-      <div className="flex justify-between items-center max-w-[600px] mx-auto opacity-95">
-        <h1 className="text-2xl font-bold font-geist-sans">Portfólio</h1>
-        <div className="flex gap-6 max-md:gap-4 items-center text-xl ">
-          {links.map((link, i) => (
-            <Link
-              key={i}
-              href={link.link}
-              target="_blank"
-              className="cursor-pointer hover:text-sky-400 transition-all duration-200 ease-in-out"
-            >
-              {link.icon}
-            </Link>
-          ))}
-          <button
-            className="pl-4 cursor-pointer opacity-50 dark:opacity-70 dark:hover:opacity-100 hover:opacity-100 transition-all duration-200 ease-in-out"
-            onClick={() => setTheme(isDarkMode ? "light" : "dark")}
+    <nav className="w-fit mx-auto opacity-95 fixed bottom-5 left-0 right-0 z-50">
+      <div className="flex gap-6 max-md:gap-4 items-center text-lg border rounded-full dark:bg-black bg-white p-3.5 px-6 shadow-md">
+        {links.map((link, i) => (
+          <Link
+            key={i}
+            href={link.link}
+            target="_blank"
+            className="cursor-pointer transition-all duration-200 ease-in-out group relative flex items-center justify-center"
           >
-            <BsSun className="hidden dark:block" />
-            <BsMoonStars className="dark:hidden" />
-          </button>
-        </div>
+            {link.icon}
+            <div className="absolute rounded-full dark:bg-white/10 bg-black/10 opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100 p-5" />
+            <div className="absolute rounded-full p-1 px-3 -top-12 opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100 bg-black text-white dark:bg-white dark:text-black text-sm">
+              {link.name}
+            </div>
+          </Link>
+        ))}
+        <div className="border-l h-[20px] w-[1px]"></div>
+        <button
+          className="cursor-pointer opacity-50 dark:opacity-70 dark:hover:opacity-100 hover:opacity-100 transition-all duration-200 ease-in-out"
+          onClick={() => setTheme(isDarkMode ? "light" : "dark")}
+        >
+          <BsSun className="hidden dark:block" />
+          <BsMoonStars className="dark:hidden" />
+        </button>
       </div>
     </nav>
   );

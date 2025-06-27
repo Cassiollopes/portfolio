@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { BsFileEarmarkTextFill, BsGithub, BsLinkedin } from "react-icons/bs";
 
 export const links = [
@@ -46,21 +45,7 @@ export default function Hero() {
         Tenho 19 anos, estou no terceiro semestre da faculdade e procuro uma
         oportunidade de estágio na área de desenvolvimento de software.
       </p>
-      <div className="flex gap-2 items-center justify-center">
-        {links.map((link, i) => (
-          <Link
-            key={i}
-            href={link.link}
-            target="_blank"
-            className={`gap-1 p-2 px-4 border rounded-md text-black/50 dark:text-white/50 dark:hover:text-white hover:text-black/65 transition-all duration-200 ease-in-out flex items-center bg-black/5 dark:bg-white/5 dark:hover:bg-white/10 hover:bg-black/10 justify-center text-base md:w-[125px] ${
-              i === 0 && "hidden"
-            } max-md:text-[15px] text-sm`}
-          >
-            <div>{link.icon}</div>
-            {link.name}
-          </Link>
-        ))}
-      </div>
+      
     </div>
   );
 }
