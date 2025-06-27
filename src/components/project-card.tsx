@@ -54,7 +54,9 @@ export default function ProjectCard({
           alt="Portfolio"
           width={100}
           height={215}
-          className={`border border-white/10 rounded-md mt-[20%] absolute ${contrast ? "border-black/10" : ""}`}
+          className={`border ${
+            !contrast ? "border-white/10" : ""
+          } rounded-md mt-[20%] absolute ${contrast ? "border-black/10" : ""}`}
           loading="eager"
           quality={100}
         />
@@ -73,9 +75,7 @@ export default function ProjectCard({
           <div className="text-3xl">{icon}</div>
           <h1 className="text-xl">{title}</h1>
         </div>
-        <p className="text-sm max-md:text-base opacity-70">
-          {description}
-        </p>
+        <p className="text-sm max-md:text-base opacity-70">{description}</p>
         <div className="flex flex-wrap gap-2 pb-1 gap-x-1.5">
           {technologies.map((tech, i) => (
             <div

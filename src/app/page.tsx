@@ -1,5 +1,6 @@
 import Hero from "@/components/hero";
 import ProjectCard from "@/components/project-card";
+import { ClipboardType } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
@@ -103,12 +104,7 @@ export default function Home() {
             <div className="rounded w-full h-[1.5px] bg-gradient-to-r from-sky-100/0 via-sky-300 to-sky-100/0" />
           </div>
           <div
-            className="flex md:grid md:grid-cols-2 gap-4 max-md:overflow-x-scroll max-md:px-5 w-full scroll-smooth"
-            style={{
-              scrollbarWidth: "none",
-              msOverflowStyle: "none",
-              scrollSnapType: "x mandatory",
-            }}
+            className="grid md:grid-cols-2 gap-4 max-md:overflow-x-scroll max-md:px-5 w-full scroll-smooth"
           >
             <ProjectCard
               link="https://e-commerce-rho-eosin.vercel.app/"
@@ -154,7 +150,7 @@ export default function Home() {
               title="CRUD Task"
               description="Aplicação CRUD para gerenciamento de tarefas. Permite a criação, edição e exclusão de tarefas."
               images={["/mobile-crud.png", "/desktop-crud.png"]}
-              icon={<LuBox />}
+              icon={<ClipboardType />}
               technologies={[
                 { label: "Next.js", icon: <RiNextjsFill /> },
                 { label: "TypeScript", icon: <BiLogoTypescript /> },
