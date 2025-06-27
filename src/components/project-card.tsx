@@ -41,13 +41,13 @@ export default function ProjectCard({
 }) {
   return (
     <div
-      className="w-full h-fit relative overflow-hidden border rounded-lg flex items-start justify-start group flex-col hover:border-black/20 dark:hover:border-white/20 transition-all duration-200 ease-in max-md:min-w-[88vw] max-w-[350px] bg-gradient-to-b from-transparent dark:to-black/10 to-white from-60%"
+      className="w-full max-md:h-fit h-full overflow-hidden border rounded-lg flex items-start justify-start group flex-col hover:border-black/20 dark:hover:border-white/20 transition-all duration-200 ease-in bg-gradient-to-b from-transparent dark:to-black/10 to-white from-60%"
       style={{ scrollSnapAlign: "center" }}
     >
       <Link
         href={link}
         target="_blank"
-        className="flex h-[180px] relative overflow-hidden w-full justify-center shadow-inner dark:opacity-80"
+        className="flex min-h-[180px] relative overflow-hidden w-full justify-center shadow-inner dark:opacity-80"
       >
         <Image
           src={images[0]}
@@ -70,17 +70,17 @@ export default function ProjectCard({
           quality={100}
         />
       </Link>
-      <div className="h-full w-full flex pt-3 px-5 pb-6 justify-between flex-col gap-3 border-t">
+      <div className="h-full w-full flex pt-3 px-5 pb-6 justify-start flex-col gap-3 border-t">
         <div className="flex items-center gap-2 uppercase">
           <div className="text-3xl">{icon}</div>
-          <h1 className="text-xl">{title}</h1>
+          <h2 className="text-xl">{title}</h2>
         </div>
-        <p className="text-sm max-md:text-base opacity-70">{description}</p>
-        <div className="flex flex-wrap gap-2 pb-1 gap-x-1.5">
+        <p className="opacity-70 text-xs">{description}</p>
+        <div className="flex flex-wrap gap-1.5 pb-1 mt-auto">
           {technologies.map((tech, i) => (
             <div
               key={i}
-              className="lowercase p-0.5 px-2 dark:bg-white/5 bg-black/5 rounded-md text-xs flex gap-1 items-center font-light max-md:text-sm"
+              className="p-0.5 px-2 dark:bg-white/5 bg-black/5 rounded-md text-xs flex gap-1 items-center font-semibold text-[10px]"
             >
               {tech.icon}
               {tech.label}
@@ -96,7 +96,7 @@ export default function ProjectCard({
               className="flex items-center gap-1 text-xs max-md:text-[15px] text-white dark:text-black bg-black/95 dark:bg-white/95 p-1.5 px-3 rounded-full group hover:opacity-70 transition-all cursor-pointer font-semibold"
             >
               {option.icon}
-              <h1>{option.label}</h1>
+              {option.label}
             </Link>
           ))}
         </div>

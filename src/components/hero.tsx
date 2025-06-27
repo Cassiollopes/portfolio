@@ -21,31 +21,28 @@ export const links = [
 
 export default function Hero() {
   return (
-    <div className="flex flex-col max-md:gap-5 gap-8 py-24 pb-20 max-md:py-20 max-md:pb-16 justify-center w-full items-center px-6">
-      <div className="md:text-center flex flex-col max-md:gap-2 font-semibold items-center">
-        <div className="flex items-center gap-2">
+    <div className="flex flex-col gap-12 justify-center w-full">
+      <div className="w-full flex justify-between">
+        <h1 className="opacity-85 text-5xl max-md:text-3xl w-fit">
+          Olá, <br /> eu sou Cassio 👋
+        </h1>
+        <div className="max-w-[90px] w-full h-full max-h-[90px] ring-[1.5px] ring-sky-300 rounded-full overflow-hidden">
           <Image
             src="https://github.com/cassiollopes.png"
             alt="Cassio"
-            width={40}
-            height={40}
-            className="rounded-full opacity-90 max-md:size-8 ring-[1.5px] ring-sky-300"
+            width={100}
+            height={100}
+            className="w-full h-full opacity-90"
           />
-          <p className="opacity-85 text-lg max-md:text-base">
-            Olá 👋 eu sou Cassio
-          </p>
         </div>
-        <h1 className="text-9xl leading-[0.80] max-md:text-[4rem] text-center font-geist-sans font-semibold">
-          <span className="text-sky-400 md:text-[110px]">Software</span>
-          <br />
-          Developer
-        </h1>
       </div>
-      <p className="text-center max-w-[600px] max-md:max-w-[380px] opacity-70 max-md:text-[15px]">
-        Tenho 19 anos, estou no terceiro semestre da faculdade e procuro uma
-        oportunidade de estágio na área de desenvolvimento de software.
-      </p>
-      
+      <div>
+        <h2>Sobre</h2>
+        <p className="opacity-70">
+          Tenho 19 anos, estou no terceiro semestre da faculdade e procuro uma
+          oportunidade de estágio na área de desenvolvimento de software.
+        </p>
+      </div>
     </div>
   );
 }
