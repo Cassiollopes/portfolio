@@ -28,6 +28,7 @@ export default function ProjectCard({
   title,
   link,
   sourceLink,
+  contrast = false,
 }: {
   images: string[];
   icon: ReactNode;
@@ -36,10 +37,11 @@ export default function ProjectCard({
   title: string;
   link: string;
   sourceLink: string;
+  contrast?: boolean;
 }) {
   return (
     <div
-      className="w-full h-full relative overflow-hidden border rounded-lg flex items-start justify-start group flex-col hover:border-black/20 dark:hover:border-white/20 transition-all duration-200 ease-in max-md:min-w-[88vw] max-w-[350px] bg-gradient-to-b from-transparent dark:to-black/10 to-white from-60%"
+      className="w-full h-fit relative overflow-hidden border rounded-lg flex items-start justify-start group flex-col hover:border-black/20 dark:hover:border-white/20 transition-all duration-200 ease-in max-md:min-w-[88vw] max-w-[350px] bg-gradient-to-b from-transparent dark:to-black/10 to-white from-60%"
       style={{ scrollSnapAlign: "center" }}
     >
       <Link
@@ -52,7 +54,7 @@ export default function ProjectCard({
           alt="Portfolio"
           width={100}
           height={215}
-          className="border border-white/10 rounded-md mt-[20%] absolute"
+          className={`border border-white/10 rounded-md mt-[20%] absolute ${contrast ? "border-black/10" : ""}`}
           loading="eager"
           quality={100}
         />

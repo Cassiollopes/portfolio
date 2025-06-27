@@ -103,7 +103,7 @@ export default function Home() {
             <div className="rounded w-full h-[1.5px] bg-gradient-to-r from-sky-100/0 via-sky-300 to-sky-100/0" />
           </div>
           <div
-            className="flex gap-4 max-md:overflow-x-scroll max-md:px-5 w-full scroll-smooth"
+            className="flex md:grid md:grid-cols-2 gap-4 max-md:overflow-x-scroll max-md:px-5 w-full scroll-smooth"
             style={{
               scrollbarWidth: "none",
               msOverflowStyle: "none",
@@ -145,6 +145,24 @@ export default function Home() {
                 { label: "Tailwind", icon: <RiTailwindCssFill /> },
                 { label: "Supabase", icon: <RiSupabaseLine /> },
                 { label: "MySQL", icon: <GrMysql /> },
+              ]}
+            />
+            <ProjectCard
+              contrast
+              link="https://front-crud-task.vercel.app/"
+              sourceLink="https://github.com/Cassiollopes/front-crud-task"
+              title="CRUD Task"
+              description="Aplicação CRUD para gerenciamento de tarefas. Permite a criação, edição e exclusão de tarefas."
+              images={["/mobile-crud.png", "/desktop-crud.png"]}
+              icon={<LuBox />}
+              technologies={[
+                { label: "Next.js", icon: <RiNextjsFill /> },
+                { label: "TypeScript", icon: <BiLogoTypescript /> },
+                { label: "Tailwind", icon: <RiTailwindCssFill /> },
+                { label: "ShadcnUI", icon: <SiShadcnui /> },
+                { label: "Prisma", icon: <SiPrisma /> },
+                { label: "Railway", icon: <SiRailway /> },
+                { label: "PostgreSQL", icon: <BiLogoPostgresql /> },
               ]}
             />
           </div>
