@@ -80,7 +80,7 @@ export default function ProjectCard({
           {technologies.map((tech, i) => (
             <div
               key={i}
-              className="p-0.5 px-2 dark:bg-white/5 bg-black/5 rounded-md text-xs flex gap-1 items-center font-semibold text-[10px]"
+              className="p-0.5 px-2 dark:bg-white/5 bg-black/5 rounded-md flex gap-1 items-center font-bold text-[10px]"
             >
               {tech.icon}
               {tech.label}
