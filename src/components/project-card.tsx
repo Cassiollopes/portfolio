@@ -52,9 +52,9 @@ export default function ProjectCard({
         <Image
           src={images[0]}
           alt="Portfolio"
-          width={100}
-          height={215}
-          className={`border ${
+          width={300}
+          height={415}
+          className={`border w-[100px] h-[215px] ${
             !contrast ? "border-white/10" : ""
           } rounded-md mt-[20%] absolute ${contrast ? "border-black/10" : ""}`}
           loading="eager"
@@ -65,7 +65,7 @@ export default function ProjectCard({
           alt="Portfolio"
           width={500}
           height={500}
-          className="object-fill"
+          className="object-fill h-full w-full"
           loading="eager"
           quality={100}
         />
