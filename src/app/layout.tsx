@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-      <body className={`${inter.className} ${geistSans.variable} antialiased scroll-smooth`}>
+      <body className={`${inter.className} ${geistSans.variable} antialiased scroll-smooth bg-primary-foreground dark:bg-background`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

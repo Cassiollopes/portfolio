@@ -1,9 +1,26 @@
 "use client";
 
 import Link from "next/link";
-import { links } from "./hero";
-import { BsMoonStars, BsSun } from "react-icons/bs";
+import { BsFileEarmarkTextFill, BsGithub, BsLinkedin, BsMoonStars, BsSun } from "react-icons/bs";
 import { useTheme } from "next-themes";
+
+const links = [
+  {
+    icon: <BsLinkedin />,
+    link: "https://www.linkedin.com/in/c%C3%A1ssio-eduardo-a3b7012a8/",
+    name: "Linkedin",
+  },
+  {
+    icon: <BsGithub />,
+    link: "https://github.com/Cassiollopes",
+    name: "Github",
+  },
+  {
+    icon: <BsFileEarmarkTextFill />,
+    link: "https://cassiomartins.github.io/",
+    name: "Curriculo",
+  },
+];
 
 export default function Nav() {
   const { setTheme, resolvedTheme } = useTheme();

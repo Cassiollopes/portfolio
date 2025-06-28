@@ -1,4 +1,3 @@
-import Hero from "@/components/hero";
 import ProjectCard from "@/components/project-card";
 import { ClipboardType } from "lucide-react";
 import Image from "next/image";
@@ -52,8 +51,28 @@ const skills = [
 export default function Home() {
   return (
     <div className="flex items-center justify-start max-w-[640px] mx-auto flex-col min-h-screen overflow-hidden pb-32 scroll-smooth px-4 pt-24 max-md:pt-8 gap-12">
-      <Hero />
-      <div className="flex flex-col gap-2 w-full">
+      <div className="w-full flex justify-between">
+        <h1 className="opacity-85 text-5xl max-md:text-3xl w-fit">
+          Olá, <br /> eu sou Cassio 👋
+        </h1>
+        <div className="max-w-[90px] w-full h-full max-h-[90px] ring-[1.5px] rounded-full overflow-hidden">
+          <Image
+            src="https://github.com/cassiollopes.png"
+            alt="Cassio"
+            width={100}
+            height={100}
+            className="w-full h-full"
+          />
+        </div>
+      </div>
+      <div>
+        <h2>Sobre</h2>
+        <p className="opacity-70">
+          Tenho 19 anos, estou no terceiro semestre da faculdade e procuro uma
+          oportunidade de estágio na área de desenvolvimento de software.
+        </p>
+      </div>
+      <div className="flex flex-col gap-2 w-full mt-2">
         <h2>Educação</h2>
         <Link
           target="_blank"
@@ -75,9 +94,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <p className="text-sm whitespace-nowrap">
-            2024 - Atual
-          </p>
+          <p className="text-sm whitespace-nowrap">2024 - Atual</p>
         </Link>
       </div>
       <div className="flex flex-col gap-2 w-full">
@@ -86,7 +103,7 @@ export default function Home() {
           {skills.map((skill, i) => (
             <div
               key={i}
-              className="flex gap-2 items-center opacity-70 text-sm bg-black/10 dark:bg-white/5 p-1 px-2 rounded-lg font-medium"
+              className="flex gap-2 items-center opacity-60 text-sm bg-black/10 dark:bg-white/5 p-1 px-2 rounded-lg font-medium"
             >
               {skill.icon}
               {skill.name}
