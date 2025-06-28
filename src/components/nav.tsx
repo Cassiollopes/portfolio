@@ -45,7 +45,7 @@ export default function Nav() {
         ))}
         <div className="border-l h-[20px] w-[1px]"></div>
         <button
-          className="cursor-pointer opacity-50 dark:opacity-70 dark:hover:opacity-100 hover:opacity-100 transition-all duration-200 ease-in-out"
+          className="cursor-pointer opacity-50 hover:opacity-100 transition-all duration-200 ease-in-out"
           onClick={() => setTheme(isDarkMode ? "light" : "dark")}
         >
           <BsSun className="hidden dark:block" />
