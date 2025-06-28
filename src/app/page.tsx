@@ -69,7 +69,7 @@ const skills = [
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-start max-w-[640px] mx-auto flex-col min-h-screen overflow-hidden pb-32 scroll-smooth px-4 pt-20 max-md:pt-8 gap-12">
+    <div className="flex items-center justify-start max-w-[640px] mx-auto flex-col min-h-screen overflow-hidden pb-32 scroll-smooth px-4 pt-20 max-md:pt-8 gap-12 animate-fadeIn">
       <div className="w-full flex justify-between items-center">
         <h1 className="text-5xl max-md:text-3xl w-fit">
           Olá, <br /> eu sou Cassio 👋
