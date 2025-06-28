@@ -133,7 +133,7 @@ export default function Home() {
 
       <div className="flex flex-col gap-10 items-center w-full mt-4">
         <div className="rounded-lg bg-black/5 dark:bg-white/5 p-1 px-3">
-          <h1>Meus Projetos</h1>
+          <h2 className="text-base">Meus Projetos</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-4">
           <ProjectCard
