@@ -2,11 +2,18 @@ import ProjectCard from "@/components/project-card";
 import { ClipboardType } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
-import { GrMysql } from "react-icons/gr";
-import { LuBox } from "react-icons/lu";
 import {
+  BiGitBranch,
+  BiLogoPostgresql,
+  BiLogoTypescript,
+} from "react-icons/bi";
+import { FaJava, FaNodeJs } from "react-icons/fa6";
+import { GrMysql } from "react-icons/gr";
+import { LuBox, LuGitFork } from "react-icons/lu";
+import {
+  RiJavascriptFill,
   RiNextjsFill,
+  RiReactjsFill,
   RiSupabaseLine,
   RiTailwindCssFill,
 } from "react-icons/ri";
@@ -15,47 +22,59 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 
 const skills = [
   {
-    name: "Typescript",
+    name: "JavaScript",
+    icon: <RiJavascriptFill />,
+  },
+  {
+    name: "TypeScript",
     icon: <BiLogoTypescript />,
   },
   {
-    name: "Tailwind",
-    icon: <RiTailwindCssFill />,
+    name: "Nodejs",
+    icon: <FaNodeJs />,
   },
   {
-    name: "Prisma",
-    icon: <SiPrisma />,
-  },
-  {
-    name: "Postgres",
-    icon: <BiLogoPostgresql />,
+    name: "React",
+    icon: <RiReactjsFill />,
   },
   {
     name: "Nextjs",
     icon: <RiNextjsFill />,
   },
   {
-    name: "Framer Motion",
-    icon: <TbBrandFramerMotion />,
+    name: "Git",
+    icon: <BiGitBranch />,
   },
   {
-    name: "ShadcnUI",
-    icon: <SiShadcnui />,
+    name: "GitFlow",
+    icon: <LuGitFork />,
   },
   {
-    name: "Railway",
-    icon: <SiRailway />,
+    name: "MySQL",
+    icon: <GrMysql />,
+  },
+  {
+    name: "Postgres",
+    icon: <BiLogoPostgresql />,
+  },
+  {
+    name: "Java",
+    icon: <FaJava />,
+  },
+  {
+    name: "C#",
+    icon: "",
   },
 ];
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-start max-w-[640px] mx-auto flex-col min-h-screen overflow-hidden pb-32 scroll-smooth px-4 pt-24 max-md:pt-8 gap-12">
-      <div className="w-full flex justify-between">
-        <h1 className="opacity-85 text-5xl max-md:text-3xl w-fit">
+    <div className="flex items-center justify-start max-w-[640px] mx-auto flex-col min-h-screen overflow-hidden pb-32 scroll-smooth px-4 pt-20 max-md:pt-8 gap-12">
+      <div className="w-full flex justify-between items-center">
+        <h1 className="text-5xl max-md:text-3xl w-fit">
           Olá, <br /> eu sou Cassio 👋
         </h1>
-        <div className="max-w-[90px] w-full h-full max-h-[90px] ring-[1.5px] rounded-full overflow-hidden">
+        <div className="max-w-[100px] w-full h-full max-h-[100px] ring-[1.5px] rounded-full overflow-hidden">
           <Image
             src="https://github.com/cassiollopes.png"
             alt="Cassio"
@@ -103,7 +122,7 @@ export default function Home() {
           {skills.map((skill, i) => (
             <div
               key={i}
-              className="flex gap-2 items-center opacity-60 text-sm bg-black/10 dark:bg-white/5 p-1 px-2 rounded-lg font-medium"
+              className="flex gap-2 items-center opacity-70 text-sm bg-black/10 dark:bg-white/5 p-1 px-2 rounded-lg font-medium"
             >
               {skill.icon}
               {skill.name}
@@ -113,9 +132,8 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col gap-10 items-center w-full mt-4">
-        <div className="w-fit text-2xl flex-col uppercase">
+        <div className="rounded-lg bg-black/5 dark:bg-white/5 p-1 px-3">
           <h1>Meus Projetos</h1>
-          <div className="rounded w-full h-[1.5px] bg-gradient-to-r from-sky-100/0 via-sky-300 to-sky-100/0" />
         </div>
         <div className="grid md:grid-cols-2 gap-4">
           <ProjectCard
@@ -157,6 +175,7 @@ export default function Home() {
           />
           <ProjectCard
             contrast
+            apiLink="https://github.com/Cassiollopes/api-crud-task"
             link="https://front-crud-task.vercel.app/"
             sourceLink="https://github.com/Cassiollopes/front-crud-task"
             title="CRUD Task"
@@ -171,6 +190,7 @@ export default function Home() {
               { label: "Prisma", icon: <SiPrisma /> },
               { label: "Railway", icon: <SiRailway /> },
               { label: "PostgreSQL", icon: <BiLogoPostgresql /> },
+              { label: "Node.js", icon: <FaNodeJs /> },
             ]}
           />
         </div>
