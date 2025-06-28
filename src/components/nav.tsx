@@ -11,7 +11,7 @@ export default function Nav() {
 
   return (
     <nav className="w-fit mx-auto opacity-95 fixed bottom-5 left-0 right-0 z-50">
-      <div className="flex gap-6 max-md:gap-4 items-center text-lg border rounded-full dark:bg-black bg-white p-3.5 px-6 shadow-md">
+      <div className="flex gap-6 max-md:gap-4 items-center text-xl border rounded-full dark:bg-black bg-white p-3.5 px-6 shadow-md">
         {links.map((link, i) => (
           <Link
             key={i}
