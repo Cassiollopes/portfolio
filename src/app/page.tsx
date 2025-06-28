@@ -70,12 +70,12 @@ export default function Home() {
             />
             <div className="flex flex-col text-sm justify-center h-full">
               <p>Una Divinópolis</p>
-              <p className="opacity-60 truncate">
+              <p className="opacity-70 truncate">
                 Cursando Ciência da Computação
               </p>
             </div>
           </div>
-          <p className="opacity-50 text-sm font-light whitespace-nowrap">
+          <p className="text-sm whitespace-nowrap">
             2024 - Atual
           </p>
         </Link>
@@ -86,10 +86,10 @@ export default function Home() {
           {skills.map((skill, i) => (
             <div
               key={i}
-              className="flex gap-2 items-center opacity-50 text-sm bg-black/10 dark:bg-white/5 p-1 px-2 rounded-lg font-light"
+              className="flex gap-2 items-center opacity-70 text-sm bg-black/10 dark:bg-white/5 p-1 px-2 rounded-lg font-medium"
             >
               {skill.icon}
-              <p>{skill.name}</p>
+              {skill.name}
             </div>
           ))}
         </div>
