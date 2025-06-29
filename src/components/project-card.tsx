@@ -47,7 +47,7 @@ export default function ProjectCard({
 }) {
   return (
     <div
-      className="w-full max-md:h-fit h-full overflow-hidden flex items-start justify-start group flex-col transition-all duration-200 ease-in hover:shadow-xl group rounded-b-3xl bg-transparent"
+      className="w-full max-md:h-fit h-full flex items-start justify-start group flex-col transition-all duration-200 ease-in hover:shadow-xl group rounded-b-2xl overflow-hidden"
     >
       <Link
         href={link}
@@ -75,7 +75,7 @@ export default function ProjectCard({
           quality={100}
         />
       </Link>
-      <div className="h-full w-full flex pt-3 px-5 pb-6 justify-start flex-col gap-3 rounded-t-2xl rounded-b-3xl border-[2px] transition-all duration-200 ease-in -mt-5 z-20 bg-secondary shadow-xl">
+      <div className="h-full w-full flex pt-3 p-5 justify-start flex-col gap-3 rounded-b-2xl border-[2px] transition-all duration-200 ease-in -mt-5 z-20 bg-secondary shadow-2xl">
         <div className="flex items-center gap-2 uppercase">
           <div className="text-3xl">{icon}</div>
           <h2 className="text-xl">{title}</h2>
