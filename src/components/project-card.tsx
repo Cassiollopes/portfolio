@@ -76,7 +76,7 @@ export default function ProjectCard({
           quality={100}
         />
       </Link>
-      <div className="h-full w-full flex pt-3 px-5 pb-6 justify-start flex-col gap-3 rounded-t-2xl rounded-b-3xl border-[2px] transition-all duration-200 ease-in -mt-5 z-20 dark:bg-[#141414] bg-white shadow-xl">
+      <div className="h-full w-full flex pt-3 px-5 pb-6 justify-start flex-col gap-3 rounded-t-2xl rounded-b-3xl border-[2px] transition-all duration-200 ease-in -mt-5 z-20 bg-secondary shadow-xl">
         <div className="flex items-center gap-2 uppercase">
           <div className="text-3xl">{icon}</div>
           <h2 className="text-xl">{title}</h2>
