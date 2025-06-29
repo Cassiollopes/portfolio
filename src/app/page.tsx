@@ -87,8 +87,9 @@ export default function Home() {
       <div>
         <h2>Sobre</h2>
         <p className="opacity-70">
-          Tenho 19 anos, estou no terceiro semestre da faculdade e procuro uma
-          oportunidade de estágio na área de desenvolvimento de software.
+          Estudante do terceiro semestre de Ciência da Computação com foco em
+          desenvolvimento. Busco uma oportunidade de estágio para crescer
+          profissionalmente e contribuir com projetos reais.
         </p>
       </div>
       <div className="flex flex-col gap-2 w-full mt-2">
