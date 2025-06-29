@@ -47,13 +47,13 @@ export default function ProjectCard({
 }) {
   return (
     <div
-      className="w-full max-md:h-fit h-full overflow-hidden border rounded-3xl rounded-t-xl flex items-start justify-start group flex-col transition-all duration-200 ease-in bg-gradient-to-b from-transparent dark:to-black/10 to-white from-60% hover:shadow-xl group"
+      className="w-full max-md:h-fit h-full overflow-hidden flex items-start justify-start group flex-col transition-all duration-200 ease-in hover:shadow-xl group rounded-b-3xl bg-transparent"
       style={{ scrollSnapAlign: "center" }}
     >
       <Link
         href={link}
         target="_blank"
-        className="flex md:min-h-[220px] relative overflow-hidden w-full justify-center shadow-inner opacity-95 dark:opacity-85"
+        className="flex md:min-h-[210px] relative overflow-hidden w-full justify-center shadow-inner opacity-95 dark:opacity-85 rounded-t-xl border"
       >
         <Image
           src={images[0]}
@@ -76,7 +76,7 @@ export default function ProjectCard({
           quality={100}
         />
       </Link>
-      <div className="h-full w-full flex pt-3 px-5 pb-6 justify-start flex-col gap-3 border-t rounded-t-2xl  transition-all duration-200 ease-in -mt-5 z-20 dark:bg-[#141414] bg-white shadow-xl">
+      <div className="h-full w-full flex pt-3 px-5 pb-6 justify-start flex-col gap-3 rounded-t-2xl rounded-b-3xl border-[2px] transition-all duration-200 ease-in -mt-5 z-20 dark:bg-[#141414] bg-white shadow-xl">
         <div className="flex items-center gap-2 uppercase">
           <div className="text-3xl">{icon}</div>
           <h2 className="text-xl">{title}</h2>
