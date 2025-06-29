@@ -48,7 +48,6 @@ export default function ProjectCard({
   return (
     <div
       className="w-full max-md:h-fit h-full overflow-hidden flex items-start justify-start group flex-col transition-all duration-200 ease-in hover:shadow-xl group rounded-b-3xl bg-transparent"
-      style={{ scrollSnapAlign: "center" }}
     >
       <Link
         href={link}
