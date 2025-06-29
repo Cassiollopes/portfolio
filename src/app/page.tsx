@@ -69,7 +69,7 @@ const skills = [
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-start max-w-[640px] mx-auto flex-col min-h-screen overflow-hidden pb-32 scroll-smooth px-4 pt-20 max-md:pt-8 gap-12 animate-fadeIn">
+    <div className="flex items-center justify-start max-w-[630px] mx-auto flex-col min-h-screen gap-12 animate-fadeIn">
       <div className="w-full flex justify-between items-center">
         <h1 className="text-5xl max-md:text-3xl w-fit">
           Olá, <br /> eu sou Cassio 👋
@@ -132,9 +132,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-10 items-center w-full mt-4">
-        <div className="rounded-lg bg-black/5 dark:bg-white/5 p-1 px-3">
-          <h2 className="text-base">Meus Projetos</h2>
+      <div className="flex flex-col gap-10 items-center w-full mt-4 max-md:px-2">
+        <div className="rounded-lg bg-black/5 dark:bg-white/5 p-1 px-2">
+          <h2>Meus Projetos</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-4">
           <ProjectCard
