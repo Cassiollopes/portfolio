@@ -132,9 +132,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-10 items-center w-full mt-4 max-md:px-2">
-        <div className="rounded-lg bg-black/5 dark:bg-white/5 p-1 px-2">
+      <div className="flex flex-col gap-8 items-center w-full mt-4">
+        <div>
           <h2>Meus Projetos</h2>
+          <div className="bg-gradient-to-r from-transparent via-blue-500 to-transparent h-1 rounded-full"></div>
         </div>
         <div className="grid md:grid-cols-2 gap-4">
           <ProjectCard

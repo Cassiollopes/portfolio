@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br" suppressHydrationWarning>
       <body
-        className={`${inter.className} ${geistSans.variable} antialiased scroll-smooth bg-primary-foreground dark:bg-background px-4 pt-20 max-md:pt-8 pb-32 select-none`}
+        className={`${inter.className} ${geistSans.variable} antialiased scroll-smooth bg-primary-foreground  px-5 pt-20 max-md:pt-8 pb-32 select-none dark:bg-black/40`}
       >
         <ThemeProvider
           attribute="class"
