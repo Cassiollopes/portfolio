@@ -74,7 +74,7 @@ export default function Home() {
         <h1 className="text-5xl max-md:text-3xl w-fit">
           Olá, <br /> eu sou Cassio 👋
         </h1>
-        <div className="max-w-[100px] w-full h-full max-h-[100px] ring-[1.5px] rounded-full overflow-hidden">
+        <div className="max-w-[110px] w-full h-full max-h-[110px] border rounded-full overflow-hidden">
           <Image
             src="https://github.com/cassiollopes.png"
             alt="Cassio"
