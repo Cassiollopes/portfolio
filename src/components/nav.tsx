@@ -38,7 +38,7 @@ export default function Nav() {
           >
             {link.icon}
             <div className="absolute rounded-full dark:bg-white/10 bg-black/10 opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100 p-5" />
-            <div className="absolute rounded-full p-1 px-3 -top-12 opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100 bg-black text-white dark:bg-white dark:text-black text-sm">
+            <div className="absolute rounded-full p-1 px-3 -top-12 opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100 invisible group-hover:visible bg-black text-white dark:bg-white dark:text-black text-sm">
               {link.name}
             </div>
           </Link>
