@@ -17,7 +17,7 @@ const links = [
   },
   {
     icon: <BsFileEarmarkTextFill />,
-    link: "https://cassiomartins.github.io/",
+    link: "/curriculo-cassio-eduardo.pdf",
     name: "Curriculo",
   },
 ];
@@ -34,6 +34,11 @@ export default function Nav() {
             key={i}
             href={link.link}
             target="_blank"
+            download={
+              link.name === "Curriculo"
+                ? "curriculo-cassio-eduardo.pdf"
+                : undefined
+            }
             className="cursor-pointer transition-all duration-200 ease-in-out group relative flex items-center justify-center"
           >
             {link.icon}
