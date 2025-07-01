@@ -80,7 +80,7 @@ export default function ProjectCard({
           <div className="text-3xl">{icon}</div>
           <h2 className="text-xl">{title}</h2>
         </div>
-        <p className="opacity-70 text-xs">{description}</p>
+        <p className="text-xs">{description}</p>
         <div className="flex flex-wrap gap-1.5 pb-1 mt-auto opacity-80">
           {technologies.map((tech, i) => (
             <div

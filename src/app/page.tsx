@@ -86,10 +86,13 @@ export default function Home() {
       </div>
       <div>
         <h2>Sobre</h2>
-        <p className="opacity-70">
-          Estudante do terceiro semestre de Ciência da Computação com foco em
-          desenvolvimento. Busco uma oportunidade de estágio para crescer
-          profissionalmente e contribuir com projetos reais.
+        <p>
+          Sou estudante de Ciência da Computação com foco em desenvolvimento
+          <span className="font-bold text-blue-500"> fullstack</span>, utilizando tecnologias modernas de frontend e backend.
+          Tenho experiência prática com React, Node.js, e outras ferramentas que
+          aplico em projetos pessoais e acadêmicos. Estou em busca da minha
+          primeira oportunidade profissional, onde possa contribuir, aprender e
+          evoluir como desenvolvedor em um ambiente colaborativo.
         </p>
       </div>
       <div className="flex flex-col gap-2 w-full mt-2">
@@ -108,13 +111,13 @@ export default function Home() {
               className="rounded-full object-cover"
             />
             <div className="flex flex-col text-sm justify-center h-full">
-              <p>Una Divinópolis</p>
-              <p className="opacity-70 truncate">
+              Una Divinópolis
+              <p className="truncate">
                 Cursando Ciência da Computação
               </p>
             </div>
           </div>
-          <p className="text-sm whitespace-nowrap">2024 - Atual</p>
+          <p className="text-sm whitespace-nowrap">fevereiro 2024 - Atual</p>
         </Link>
       </div>
       <div className="flex flex-col gap-2 w-full">
