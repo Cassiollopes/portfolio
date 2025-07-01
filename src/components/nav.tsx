@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 const links = [
   {
     icon: <BsLinkedin />,
-    link: "https://www.linkedin.com/in/c%C3%A1ssio-eduardo-a3b7012a8/",
+    link: "https://www.linkedin.com/in/cassio-e-a-lopes/",
     name: "Linkedin",
   },
   {
