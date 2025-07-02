@@ -1,10 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { BsFileEarmarkTextFill, BsGithub, BsLinkedin, BsMoonStars, BsSun } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsMoonStars, BsSun } from "react-icons/bs";
 import { useTheme } from "next-themes";
+import { FaFileAlt } from "react-icons/fa";
 
 const links = [
+  {
+    icon: <FaFileAlt />,
+    link: "/curriculo-cassio-eduardo.pdf",
+    name: "Curriculo",
+  },
   {
     icon: <BsLinkedin />,
     link: "https://www.linkedin.com/in/cassio-e-a-lopes/",
@@ -15,11 +21,6 @@ const links = [
     link: "https://github.com/Cassiollopes",
     name: "Github",
   },
-  {
-    icon: <BsFileEarmarkTextFill />,
-    link: "/curriculo-cassio-eduardo.pdf",
-    name: "Curriculo",
-  },
 ];
 
 export default function Nav() {
@@ -28,7 +29,7 @@ export default function Nav() {
 
   return (
     <nav className="w-fit mx-auto fixed bottom-5 left-0 right-0 z-50">
-      <div className="flex gap-6 max-md:gap-4 items-center text-xl border rounded-full bg-secondary p-3.5 px-6 shadow-md animate-scaleUp">
+      <div className="flex gap-6 max-md:gap-4 items-center text-xl border rounded-full bg-secondary p-3 px-8 shadow-md animate-scaleUp">
         {links.map((link, i) => (
           <Link
             key={i}
