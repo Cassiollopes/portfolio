@@ -70,7 +70,7 @@ const skills = [
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-start max-w-[630px] mx-auto flex-col min-h-screen gap-12 animate-fadeIn">
+    <div className="flex items-center justify-start max-w-[630px] mx-auto flex-col min-h-screen gap-10 animate-fadeIn">
       <div className="w-full flex justify-between items-center">
         <h1 className="text-5xl max-md:text-3xl w-fit">
           Olá, <br /> eu sou Cássio 👋
@@ -85,7 +85,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div>
+      <div className="mt-4">
         <h2>Sobre</h2>
         <p>
           Sou estudante de Ciência da Computação com foco em desenvolvimento
@@ -97,7 +97,7 @@ export default function Home() {
           evoluir como desenvolvedor em um ambiente colaborativo.
         </p>
       </div>
-      <div className="flex flex-col gap-2 w-full mt-2">
+      <div className="flex flex-col gap-3 w-full">
         <h2>Educação</h2>
         <EducationItem
           link="https://www.una.br/"
@@ -107,7 +107,7 @@ export default function Home() {
           imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-ZxOa-Am3c9h1K9PiPIFaCmpx81n-NZV4A&s"
         />
       </div>
-      <div className="flex flex-col gap-2.5 w-full mt-2 relative">
+      <div className="flex flex-col gap-3 w-full mt-2 relative">
         <h2>Cursos Complementares</h2>
         <div className="flex flex-col gap-4 relative py-1">
           <div className="absolute inset-0 h-full z-0">
@@ -138,13 +138,13 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex flex-col gap-3 w-full">
         <h2>Habilidades</h2>
         <div className="flex flex-wrap gap-4 max-md:gap-3">
           {skills.map((skill, i) => (
             <div
               key={i}
-              className="flex gap-2 items-center opacity-70 text-sm bg-black/10 dark:bg-white/5 p-1 px-2 rounded-lg font-medium"
+              className="flex gap-1 items-center opacity-70 text-sm bg-black/5 dark:bg-white/5 p-0.5 px-2 rounded-lg font-medium"
             >
               {skill.icon}
               {skill.name}
@@ -219,7 +219,7 @@ export default function Home() {
         </div>
       </div>
       <Link
-        className="pt-10 text-center text-white group w-full flex flex-col items-center justify-center gap-2"
+        className="pt-8 text-center text-white group w-full flex flex-col items-center justify-center gap-2"
         href={"https://www.linkedin.com/in/cassio-e-a-lopes/"}
         target="_blank"
       >
