@@ -107,7 +107,7 @@ export default function Home() {
           imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-ZxOa-Am3c9h1K9PiPIFaCmpx81n-NZV4A&s"
         />
       </div>
-      <div className="flex flex-col gap-3 w-full mt-2 relative">
+      <div className="flex flex-col gap-3 w-full relative">
         <h2>Cursos Complementares</h2>
         <div className="flex flex-col gap-4 relative py-1">
           <div className="absolute inset-0 h-full z-0">
