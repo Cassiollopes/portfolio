@@ -85,7 +85,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="mt-4">
+      <div className="mt-2">
         <h2>Sobre</h2>
         <p>
           Sou estudante de Ciência da Computação com foco em desenvolvimento
