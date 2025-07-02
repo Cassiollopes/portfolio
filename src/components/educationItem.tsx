@@ -37,7 +37,7 @@ export default function EducationItem({
             </h3>
             <p className="text-sm whitespace-nowrap">{date}</p>
           </div>
-          <div className="truncate leading-none text-xs text-foreground">{description}</div>
+          <div className="truncate leading-none text-xs">{description}</div>
         </div>
       </div>
     </Link>
