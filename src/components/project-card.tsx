@@ -92,7 +92,7 @@ export default function ProjectCard({
             </div>
           ))}
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
           {cardOptions.map((option, i) => (
             <Link
               href={
@@ -107,7 +107,7 @@ export default function ProjectCard({
               className={`${
                 option.label === "API" && !apiLink ? "hidden" : ""
               } ${
-                option.label === "API" ? "ml-auto ring-2" : ""
+                option.label === "API" ? "ring-2" : ""
               } flex items-center gap-1 text-xs max-md:text-[15px] text-white dark:text-black bg-black/95 dark:bg-white/95 p-1.5 px-3 rounded-full group hover:opacity-70 transition-all cursor-pointer font-semibold`}
             >
               {option.icon}
