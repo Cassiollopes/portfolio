@@ -78,7 +78,7 @@ export default function ProjectCard({
       <div className="h-full w-full flex pt-2 p-5 justify-start flex-col gap-3">
         <div className="flex items-center gap-2 uppercase">
           <div className="text-3xl">{icon}</div>
-          <h2 className="text-xl">{title}</h2>
+          <h3 className="text-xl font-bold">{title}</h3>
         </div>
         <p className="text-xs">{description}</p>
         <div className="flex flex-wrap gap-1.5 pb-1 mt-auto opacity-80">

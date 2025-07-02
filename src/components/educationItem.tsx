@@ -31,13 +31,13 @@ export default function EducationItem({
         />
         <div className="flex flex-col text-sm justify-center h-full w-full">
           <div className="flex justify-between items-center gap-2">
-            <div className="flex items-center gap-1">
+            <h3 className="flex items-center gap-1">
               {title}
               <ChevronRight className="w-0 group-hover:w-4 transition-all duration-200 ease-in-out" />
-            </div>
+            </h3>
             <p className="text-sm whitespace-nowrap">{date}</p>
           </div>
-          <p className="truncate">{description}</p>
+          <div className="truncate leading-none text-xs text-foreground">{description}</div>
         </div>
       </div>
     </Link>
