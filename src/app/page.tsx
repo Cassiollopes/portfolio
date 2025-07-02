@@ -1,3 +1,4 @@
+import EducationItem from "@/components/educationItem";
 import ProjectCard from "@/components/project-card";
 import { ClipboardType } from "lucide-react";
 import Image from "next/image";
@@ -88,8 +89,9 @@ export default function Home() {
         <h2>Sobre</h2>
         <p>
           Sou estudante de Ciência da Computação com foco em desenvolvimento
-          <span className="font-bold text-blue-500"> fullstack</span>, utilizando tecnologias modernas de frontend e backend.
-          Tenho experiência prática com React, Node.js, e outras ferramentas que
+          <span className="font-bold text-blue-500"> fullstack</span>,
+          utilizando tecnologias modernas de frontend e backend. Tenho
+          experiência prática com React, Node.js, e outras ferramentas que
           aplico em projetos pessoais e acadêmicos. Estou em busca da minha
           primeira oportunidade profissional, onde possa contribuir, aprender e
           evoluir como desenvolvedor em um ambiente colaborativo.
@@ -97,28 +99,44 @@ export default function Home() {
       </div>
       <div className="flex flex-col gap-2 w-full mt-2">
         <h2>Educação</h2>
-        <Link
-          target="_blank"
-          href={"https://www.una.br/"}
-          className="flex justify-between items-center w-full hover:opacity-50 transition-all duration-200 ease-in-out max-md:items-start"
-        >
-          <div className="flex gap-2 items-center">
-            <Image
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-ZxOa-Am3c9h1K9PiPIFaCmpx81n-NZV4A&s"
-              alt="Faculdade"
-              width={46}
-              height={46}
-              className="rounded-full object-cover"
-            />
-            <div className="flex flex-col text-sm justify-center h-full">
-              Una Divinópolis
-              <p className="truncate">
-                Cursando Ciência da Computação
-              </p>
+        <EducationItem
+          link="https://www.una.br/"
+          title="Una Divinópolis"
+          date="fevereiro 2024 - Atual"
+          description="Cursando Ciência da Computação"
+          imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-ZxOa-Am3c9h1K9PiPIFaCmpx81n-NZV4A&s"
+        />
+      </div>
+      <div className="flex flex-col gap-2.5 w-full mt-2 relative">
+        <h2>Cursos Complementares</h2>
+        <div className="flex flex-col gap-4 relative py-1">
+          <div className="absolute inset-0 h-full z-0">
+            <div className="h-full w-[46px] flex items-center justify-center">
+              <div className="h-full w-[1px] bg-border rounded-full"></div>
             </div>
           </div>
-          <p className="text-sm whitespace-nowrap">fevereiro 2024 - Atual</p>
-        </Link>
+          <EducationItem
+            link="https://cursos.alura.com.br/certificate/f74f6a0e-b407-4a38-be34-9c9f1f00af85?lang"
+            title="Alura"
+            date="2024"
+            description="API REST, JavaScript, C# ..."
+            imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZHHD0ufmK1WAiwukpR-AztrqG7AFZwJ2g_A&s"
+          />
+          <EducationItem
+            link="https://www.linkedin.com/in/cassio-e-a-lopes/details/certifications/1751157743692/single-media-viewer/?profileId=ACoAAEokoI8BJh9oFVxmfJF54C7xl7IRquaUQ1o"
+            title="Udemy"
+            date="2024"
+            description="Nodejs"
+            imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRodr4QNsfW_LsPA9UwYffbYqAykDdnyKjc4Q&s"
+          />
+          <EducationItem
+            link="https://www.linkedin.com/in/cassio-e-a-lopes/details/certifications/1751158288131/single-media-viewer/?profileId=ACoAAEokoI8BJh9oFVxmfJF54C7xl7IRquaUQ1o"
+            title="Curso em Vídeo"
+            date="2023"
+            description="HTML5 e CSS3"
+            imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHjrDVH5Gmh1zFIQFKxvNiN5oT-EvYHUM5hxVxuAWfwCOqErUk184GLH0LtIJqG_3BPdQ&usqp=CAU"
+          />
+        </div>
       </div>
       <div className="flex flex-col gap-2 w-full">
         <h2>Habilidades</h2>
@@ -200,6 +218,18 @@ export default function Home() {
           />
         </div>
       </div>
+      <Link
+        className="pt-10 text-center text-white group w-full flex flex-col items-center justify-center gap-2"
+        href={"https://www.linkedin.com/in/cassio-e-a-lopes/"}
+        target="_blank"
+      >
+        <h3 className="text-xl font-semibold mb-2 bg-blue-500/70 p-1 px-6 rounded-3xl border-[1.5px] border-blue-500 group-hover:bg-blue-500/90 transition-all duration-200 ease-in-out w-fit">
+          Ficou interessado? ✨
+        </h3>
+        <p className="text-base group-hover:text-foreground transition-all duration-200 ease-in-out">
+          Bora trocar uma ideia!
+        </p>
+      </Link>
     </div>
   );
 }

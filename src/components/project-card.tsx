@@ -47,12 +47,12 @@ export default function ProjectCard({
 }) {
   return (
     <div
-      className="w-full max-md:h-fit h-full flex items-start justify-start group flex-col transition-all duration-200 ease-in hover:shadow-xl group rounded-b-2xl overflow-hidden"
+      className="w-full max-md:h-fit h-full flex items-start justify-start group flex-col transition-all duration-200 ease-in hover:shadow-xl group rounded-b-2xl rounded-t-xl border overflow-hidden"
     >
       <Link
         href={link}
         target="_blank"
-        className="flex md:min-h-[210px] relative overflow-hidden w-full justify-center shadow-inner opacity-95 dark:opacity-85 rounded-t-xl border"
+        className="flex md:min-h-[200px] relative overflow-hidden w-full justify-center shadow-inner opacity-95 dark:opacity-85"
       >
         <Image
           src={images[0]}
@@ -75,7 +75,7 @@ export default function ProjectCard({
           quality={100}
         />
       </Link>
-      <div className="h-full w-full flex pt-3 p-5 justify-start flex-col gap-3 rounded-b-2xl border-[2px] transition-all duration-200 ease-in -mt-5 z-20 bg-secondary shadow-2xl">
+      <div className="h-full w-full flex pt-2 p-5 justify-start flex-col gap-3">
         <div className="flex items-center gap-2 uppercase">
           <div className="text-3xl">{icon}</div>
           <h2 className="text-xl">{title}</h2>
