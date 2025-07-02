@@ -73,9 +73,9 @@ export default function Home() {
     <div className="flex items-center justify-start max-w-[630px] mx-auto flex-col min-h-screen gap-12 animate-fadeIn">
       <div className="w-full flex justify-between items-center">
         <h1 className="text-5xl max-md:text-3xl w-fit">
-          Olá, <br /> eu sou Cassio 👋
+          Olá, <br /> eu sou Cássio 👋
         </h1>
-        <div className="max-w-[110px] w-full h-full max-h-[110px] border rounded-full overflow-hidden">
+        <div className="max-w-[110px] w-full aspect-square max-md:max-w-[100px] border rounded-full overflow-hidden">
           <Image
             src="https://github.com/cassiollopes.png"
             alt="Cassio"
@@ -89,7 +89,7 @@ export default function Home() {
         <h2>Sobre</h2>
         <p>
           Sou estudante de Ciência da Computação com foco em desenvolvimento
-          <span className="font-bold text-blue-500"> fullstack</span>,
+          <span className="font-semibold text-blue-500"> fullstack</span>,
           utilizando tecnologias modernas de frontend e backend. Tenho
           experiência prática com React, Node.js, e outras ferramentas que
           aplico em projetos pessoais e acadêmicos. Estou em busca da minha
@@ -102,7 +102,7 @@ export default function Home() {
         <EducationItem
           link="https://www.una.br/"
           title="Una Divinópolis"
-          date="fevereiro 2024 - Atual"
+          date="2024 - Atual"
           description="Cursando Ciência da Computação"
           imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-ZxOa-Am3c9h1K9PiPIFaCmpx81n-NZV4A&s"
         />
