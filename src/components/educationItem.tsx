@@ -27,6 +27,7 @@ export default function EducationItem({
           alt={title}
           width={46}
           height={46}
+          quality={100}
           className="rounded-full object-cover border"
         />
         <div className="flex flex-col text-sm justify-center h-full w-full">
