@@ -32,7 +32,7 @@ export default function EducationItem({
         />
         <div className="flex flex-col text-sm justify-center h-full w-full">
           <div className="flex justify-between items-center gap-2">
-            <h3 className="flex items-center gap-1">
+            <h3 className="flex items-center gap-1 font-semibold">
               {title}
               <ChevronRight className="w-0 group-hover:w-4 transition-all duration-200 ease-in-out" />
             </h3>
