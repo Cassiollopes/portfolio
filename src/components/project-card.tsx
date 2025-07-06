@@ -108,7 +108,7 @@ export default function ProjectCard({
                 option.label === "API" && !apiLink ? "hidden" : ""
               } ${
                 option.label === "API" ? "ring-2" : ""
-              } flex items-center gap-1 text-xs max-md:text-[15px] text-white dark:text-black bg-black/95 dark:bg-white/95 p-1.5 px-3 rounded-full group hover:opacity-70 transition-all cursor-pointer font-semibold`}
+              } flex items-center gap-1 text-xs max-md:text-[15px] text-white dark:text-black bg-black dark:bg-white p-1.5 px-3 rounded-full group hover:opacity-70 transition-all cursor-pointer font-semibold`}
             >
               {option.icon}
               {option.label}
