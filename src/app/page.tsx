@@ -220,14 +220,14 @@ export default function Home() {
         </div>
       </div>
       <Link
-        className="pt-12 text-center text-white group w-full flex flex-col items-center justify-center gap-4"
+        className="mt-12 text-center text-white group"
         href={"https://www.linkedin.com/in/cassio-e-a-lopes/"}
         target="_blank"
       >
         <h3 className="text-xl font-semibold bg-blue-500/70 p-1 px-6 rounded-3xl border-[1.5px] border-blue-500 group-hover:bg-blue-500/90 transition-all duration-200 ease-in-out w-fit">
           Ficou interessado? ✨
         </h3>
-        <p className="text-base group-hover:text-foreground transition-all duration-200 ease-in-out">
+        <p className="text-base group-hover:text-foreground transition-all duration-200 ease-in-out mt-4">
           Bora trocar uma ideia!
         </p>
       </Link>
