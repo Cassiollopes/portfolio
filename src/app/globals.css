@@ -119,6 +119,6 @@
     @apply font-bold text-xl;
   }
   p {
-    @apply text-sm text-foreground/70 dark:text-foreground/60;
+    @apply text-sm text-foreground/70 dark:text-foreground/65;
   }
 }
