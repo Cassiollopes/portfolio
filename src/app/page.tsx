@@ -141,11 +141,11 @@ export default function Home() {
       </div>
       <div className="flex flex-col gap-3 w-full">
         <h2>Habilidades</h2>
-        <div className="flex flex-wrap gap-4 max-md:gap-3">
+        <div className="flex flex-wrap gap-3 max-md:pr-8">
           {skills.map((skill, i) => (
             <div
               key={i}
-              className="flex gap-1 items-center opacity-70 text-sm bg-black/5 dark:bg-white/5 p-0.5 px-2 rounded-lg font-medium"
+              className="flex gap-1 items-center text-xs bg-black/85 text-background dark:bg-white/5 dark:text-foreground p-1 px-2 rounded-lg font-medium"
             >
               {skill.icon}
               {skill.name}
