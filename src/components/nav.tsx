@@ -28,8 +28,8 @@ export default function Nav() {
   const isDarkMode = resolvedTheme === "dark";
 
   return (
-    <nav className="w-full flex justify-center items-center fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-b from-transparent to-black/[0.02] dark:to-white/[0.005] py-10 pb-5">
-      <div className="flex items-center text-xl border rounded-full bg-background p-4 shadow-sm animate-scaleUp cursor-pointer">
+    <nav className="w-full flex justify-center items-center fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-b from-transparent to-black/[0.02] dark:to-white/[0.005] py-10 pb-5 pointer-events-none">
+      <div className="flex items-center text-xl border rounded-full bg-background p-4 shadow-sm animate-scaleUp cursor-pointer pointer-events-auto">
         {links.map((link, i) => (
           <Link
             key={i}
