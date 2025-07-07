@@ -220,16 +220,14 @@ export default function Home() {
         </div>
       </div>
       <Link
-        className="mt-12 text-center text-white group"
+        className="my-20 group flex flex-col items-center gap-3"
         href={"https://www.linkedin.com/in/cassio-e-a-lopes/"}
         target="_blank"
       >
-        <h3 className="text-xl font-semibold bg-blue-500/70 p-1 px-6 rounded-3xl border-[1.5px] border-blue-500 group-hover:bg-blue-500/90 transition-all duration-200 ease-in-out w-fit">
-          Ficou interessado? ✨
-        </h3>
-        <p className="text-base group-hover:text-foreground transition-all duration-200 ease-in-out mt-4">
-          Bora trocar uma ideia!
-        </p>
+        <h3 className="text-[30px] font-bold">Ficou interessado?</h3>
+        <span className="text-blue-500 hover:underline transition-all duration-200 ease-in-out font-medium">
+          Bora trocar uma ideia 🚀
+        </span>
       </Link>
     </div>
   );
