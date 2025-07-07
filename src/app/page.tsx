@@ -219,12 +219,12 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="my-20 flex flex-col items-center gap-3">
-        <h3 className="text-[30px] font-bold">Ficou interessado?</h3>
+      <div className="my-20 flex items-end gap-2 flex-wrap justify-center">
+        <h2 className="text-2xl max-md:text-3xl">Ficou interessado?</h2>
         <Link
           href={"https://www.linkedin.com/in/cassio-e-a-lopes/"}
           target="_blank"
-          className="text-blue-500 hover:underline transition-all duration-200 ease-in-out font-medium"
+          className="text-blue-500 hover:underline transition-all duration-200 ease-in-out text-lg"
         >
           Bora trocar uma ideia 🚀
         </Link>
