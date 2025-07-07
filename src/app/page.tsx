@@ -219,16 +219,16 @@ export default function Home() {
           />
         </div>
       </div>
-      <Link
-        className="my-20 group flex flex-col items-center gap-3"
-        href={"https://www.linkedin.com/in/cassio-e-a-lopes/"}
-        target="_blank"
-      >
+      <div className="my-20 flex flex-col items-center gap-3">
         <h3 className="text-[30px] font-bold">Ficou interessado?</h3>
-        <span className="text-blue-500 hover:underline transition-all duration-200 ease-in-out font-medium">
+        <Link
+          href={"https://www.linkedin.com/in/cassio-e-a-lopes/"}
+          target="_blank"
+          className="text-blue-500 hover:underline transition-all duration-200 ease-in-out font-medium"
+        >
           Bora trocar uma ideia 🚀
-        </span>
-      </Link>
+        </Link>
+      </div>
     </div>
   );
 }
