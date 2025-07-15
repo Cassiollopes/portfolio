@@ -119,7 +119,7 @@ export default function Home() {
           <EducationItem
             link="https://cursos.alura.com.br/certificate/f74f6a0e-b407-4a38-be34-9c9f1f00af85?lang"
             title="Alura"
-            date="2024"
+            date="2024 - 2025"
             description="API REST, JavaScript, C# ..."
             imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZHHD0ufmK1WAiwukpR-AztrqG7AFZwJ2g_A&s"
           />
